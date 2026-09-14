@@ -53,7 +53,7 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     # src/my_code.cpp
     src/core.cpp
 
-    src/eeprom_spi.cpp
+    # src/eeprom_spi.cpp
 )
 
 # Add include paths

@@ -11,7 +11,7 @@
 
 #include "WireLib/util/byte_converter.hpp"
 
-#include "eeprom_spi.hpp"
+#include "EmbeddedLib/devices/eeprom/eeprom_spi.hpp"
 
 
 GPIODevice led = GPIODevice(GPIOC, GPIO_PIN_1);
