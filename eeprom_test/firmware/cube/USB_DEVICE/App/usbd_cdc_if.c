@@ -229,6 +229,8 @@ static int8_t CDC_Control_FS(uint8_t cmd, uint8_t* pbuf, uint16_t length)
 
     case CDC_SET_CONTROL_LINE_STATE:
 
+        Serial_update_connection_status(pbuf);
+
     break;
 
     case CDC_SEND_BREAK:
@@ -263,6 +265,9 @@ static int8_t CDC_Receive_FS(uint8_t* Buf, uint32_t *Len)
   /* USER CODE BEGIN 6 */
   USBD_CDC_SetRxBuffer(&hUsbDeviceFS, &Buf[0]);
   USBD_CDC_ReceivePacket(&hUsbDeviceFS);
+
+  Serial_on_receive(Buf, *Len);
+  
   return (USBD_OK);
   /* USER CODE END 6 */
 }
