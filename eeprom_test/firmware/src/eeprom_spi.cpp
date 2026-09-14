@@ -5,6 +5,11 @@ using namespace std;
 using namespace status_utils;
 
 
+EEPROMSPI::EEPROMSPI(SPI_HandleTypeDef* spi, GPIO_TypeDef* gpio_family, uint16_t gpio_pin)
+    : m_spi(spi),
+    m_cs_pin(gpio_family, gpio_pin){}
+
+
 // Datasheet Page 20 - 6.3.4 SRWD Bit
 // b6 to b4 are guarenteed 0, so if we AND the Status Register
 // with 0xFF, then if the result isn't == 0xFF then the EEPROM responded
@@ -93,6 +98,8 @@ StatusCode EEPROMSPI::write_bytes(uint16_t address, const vector<uint8_t>& bytes
 
     // Block until WIP is 0
     wait_for_WIP();
+
+    return StatusCode::OK;
 
 } // end of "write_bytes(uint16_t, const vector<uint8_t>&)"
 

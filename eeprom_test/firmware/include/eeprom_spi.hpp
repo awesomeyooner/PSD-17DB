@@ -18,6 +18,8 @@ class EEPROMSPI
 
     public:
 
+        EEPROMSPI(SPI_HandleTypeDef* spi, GPIO_TypeDef* gpio_family, uint16_t gpio_pin);
+
         bool is_connected();
 
         void wait_for_WIP();
@@ -61,6 +63,10 @@ class EEPROMSPI
         std::vector<uint8_t> create_header(uint8_t command, uint16_t address);
 
         void set_write_buffer(const std::vector<uint8_t>& bytes);
+
+        // status_utils::StatusCode transmit(const std::vector<uint8_t> bytes);
+
+        // std::vector<uint8_t> receive(uint16_t num_bytes);
         
 
 }; // class EEPROMSPI
