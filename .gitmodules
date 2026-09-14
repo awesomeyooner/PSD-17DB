@@ -1,0 +1,9 @@
+[submodule "eeprom_test/firmware/lib/EmbeddedLib"]
+	path = eeprom_test/firmware/lib/EmbeddedLib
+	url = https://github.com/awesomeyooner/EmbeddedLib.git
+[submodule "eeprom_test/firmware/lib/WireLib"]
+	path = eeprom_test/firmware/lib/WireLib
+	url = https://github.com/awesomeyooner/WireLib.git
+[submodule "eeprom_test/firmware/lib/ActionLib"]
+	path = eeprom_test/firmware/lib/ActionLib
+	url = https://github.com/awesomeyooner/ActionLib.git
