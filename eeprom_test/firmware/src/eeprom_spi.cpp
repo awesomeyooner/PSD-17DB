@@ -123,6 +123,20 @@ vector<uint8_t> EEPROMSPI::read_bytes(uint16_t address, uint16_t num_bytes)
 } // end of "read_bytes(uint16_t, uint16_t)"
 
 
+void EEPROMSPI::set_timeout_ms(int timeout_ms)
+{
+    m_timeout_ms = timeout_ms;
+ 
+} // end of "set_timeout_ms(int)"
+
+
+int EEPROMSPI::get_timeout_ms()
+{
+    return m_timeout_ms;
+
+} // end of "get_timeout_ms()"
+
+
 // Datasheet Page 9 - 3.4 Chip Select
 // Pull CS LOW to select
 void EEPROMSPI::select()
