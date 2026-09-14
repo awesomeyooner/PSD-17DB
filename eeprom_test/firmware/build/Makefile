@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware
+CMAKE_SOURCE_DIR = /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build
+CMAKE_BINARY_DIR = /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/CMakeFiles /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/CMakeFiles /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -181,6 +181,45 @@ USB_Device_Library/fast:
 	$(MAKE) $(MAKESILENT) -f cube/cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/build.make cube/cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/build
 .PHONY : USB_Device_Library/fast
 
+#=============================================================================
+# Target rules for targets named EmbeddedLib
+
+# Build rule for target.
+EmbeddedLib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 EmbeddedLib
+.PHONY : EmbeddedLib
+
+# fast build rule for target.
+EmbeddedLib/fast:
+	$(MAKE) $(MAKESILENT) -f lib/EmbeddedLib/CMakeFiles/EmbeddedLib.dir/build.make lib/EmbeddedLib/CMakeFiles/EmbeddedLib.dir/build
+.PHONY : EmbeddedLib/fast
+
+#=============================================================================
+# Target rules for targets named WireLib
+
+# Build rule for target.
+WireLib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 WireLib
+.PHONY : WireLib
+
+# fast build rule for target.
+WireLib/fast:
+	$(MAKE) $(MAKESILENT) -f lib/WireLib/CMakeFiles/WireLib.dir/build.make lib/WireLib/CMakeFiles/WireLib.dir/build
+.PHONY : WireLib/fast
+
+#=============================================================================
+# Target rules for targets named ActionLib
+
+# Build rule for target.
+ActionLib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ActionLib
+.PHONY : ActionLib
+
+# fast build rule for target.
+ActionLib/fast:
+	$(MAKE) $(MAKESILENT) -f lib/ActionLib/CMakeFiles/ActionLib.dir/build.make lib/ActionLib/CMakeFiles/ActionLib.dir/build
+.PHONY : ActionLib/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -191,8 +230,11 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... flash_dfu"
 	@echo "... flash_stlink"
+	@echo "... ActionLib"
+	@echo "... EmbeddedLib"
 	@echo "... STM32_Drivers"
 	@echo "... USB_Device_Library"
+	@echo "... WireLib"
 	@echo "... firmware"
 .PHONY : help
 

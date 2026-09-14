@@ -23,7 +23,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "core.hpp"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -48,7 +48,15 @@
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 void SystemClock_Config(void);
+
+#ifdef __cplusplus
+}
+#endif
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -89,7 +97,7 @@ int main(void)
   MX_GPIO_Init();
   MX_USB_DEVICE_Init();
   /* USER CODE BEGIN 2 */
-
+    init();
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -97,7 +105,7 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-
+    update();
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */

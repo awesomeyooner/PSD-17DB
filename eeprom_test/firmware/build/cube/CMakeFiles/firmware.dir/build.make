@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware
+CMAKE_SOURCE_DIR = /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build
+CMAKE_BINARY_DIR = /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build
 
 # Include any dependencies generated for this target.
 include cube/CMakeFiles/firmware.dir/depend.make
@@ -70,171 +70,171 @@ include cube/CMakeFiles/firmware.dir/progress.make
 include cube/CMakeFiles/firmware.dir/flags.make
 
 cube/CMakeFiles/firmware.dir/USB_DEVICE/Target/usbd_conf.c.obj: cube/CMakeFiles/firmware.dir/flags.make
-cube/CMakeFiles/firmware.dir/USB_DEVICE/Target/usbd_conf.c.obj: /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/cube/USB_DEVICE/Target/usbd_conf.c
+cube/CMakeFiles/firmware.dir/USB_DEVICE/Target/usbd_conf.c.obj: /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/cube/USB_DEVICE/Target/usbd_conf.c
 cube/CMakeFiles/firmware.dir/USB_DEVICE/Target/usbd_conf.c.obj: cube/CMakeFiles/firmware.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object cube/CMakeFiles/firmware.dir/USB_DEVICE/Target/usbd_conf.c.obj"
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT cube/CMakeFiles/firmware.dir/USB_DEVICE/Target/usbd_conf.c.obj -MF CMakeFiles/firmware.dir/USB_DEVICE/Target/usbd_conf.c.obj.d -o CMakeFiles/firmware.dir/USB_DEVICE/Target/usbd_conf.c.obj -c /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/cube/USB_DEVICE/Target/usbd_conf.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object cube/CMakeFiles/firmware.dir/USB_DEVICE/Target/usbd_conf.c.obj"
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT cube/CMakeFiles/firmware.dir/USB_DEVICE/Target/usbd_conf.c.obj -MF CMakeFiles/firmware.dir/USB_DEVICE/Target/usbd_conf.c.obj.d -o CMakeFiles/firmware.dir/USB_DEVICE/Target/usbd_conf.c.obj -c /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/cube/USB_DEVICE/Target/usbd_conf.c
 
 cube/CMakeFiles/firmware.dir/USB_DEVICE/Target/usbd_conf.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/firmware.dir/USB_DEVICE/Target/usbd_conf.c.i"
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/cube/USB_DEVICE/Target/usbd_conf.c > CMakeFiles/firmware.dir/USB_DEVICE/Target/usbd_conf.c.i
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/cube/USB_DEVICE/Target/usbd_conf.c > CMakeFiles/firmware.dir/USB_DEVICE/Target/usbd_conf.c.i
 
 cube/CMakeFiles/firmware.dir/USB_DEVICE/Target/usbd_conf.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/firmware.dir/USB_DEVICE/Target/usbd_conf.c.s"
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/cube/USB_DEVICE/Target/usbd_conf.c -o CMakeFiles/firmware.dir/USB_DEVICE/Target/usbd_conf.c.s
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/cube/USB_DEVICE/Target/usbd_conf.c -o CMakeFiles/firmware.dir/USB_DEVICE/Target/usbd_conf.c.s
 
 cube/CMakeFiles/firmware.dir/USB_DEVICE/App/usb_device.c.obj: cube/CMakeFiles/firmware.dir/flags.make
-cube/CMakeFiles/firmware.dir/USB_DEVICE/App/usb_device.c.obj: /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/cube/USB_DEVICE/App/usb_device.c
+cube/CMakeFiles/firmware.dir/USB_DEVICE/App/usb_device.c.obj: /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/cube/USB_DEVICE/App/usb_device.c
 cube/CMakeFiles/firmware.dir/USB_DEVICE/App/usb_device.c.obj: cube/CMakeFiles/firmware.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object cube/CMakeFiles/firmware.dir/USB_DEVICE/App/usb_device.c.obj"
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT cube/CMakeFiles/firmware.dir/USB_DEVICE/App/usb_device.c.obj -MF CMakeFiles/firmware.dir/USB_DEVICE/App/usb_device.c.obj.d -o CMakeFiles/firmware.dir/USB_DEVICE/App/usb_device.c.obj -c /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/cube/USB_DEVICE/App/usb_device.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object cube/CMakeFiles/firmware.dir/USB_DEVICE/App/usb_device.c.obj"
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT cube/CMakeFiles/firmware.dir/USB_DEVICE/App/usb_device.c.obj -MF CMakeFiles/firmware.dir/USB_DEVICE/App/usb_device.c.obj.d -o CMakeFiles/firmware.dir/USB_DEVICE/App/usb_device.c.obj -c /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/cube/USB_DEVICE/App/usb_device.c
 
 cube/CMakeFiles/firmware.dir/USB_DEVICE/App/usb_device.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/firmware.dir/USB_DEVICE/App/usb_device.c.i"
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/cube/USB_DEVICE/App/usb_device.c > CMakeFiles/firmware.dir/USB_DEVICE/App/usb_device.c.i
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/cube/USB_DEVICE/App/usb_device.c > CMakeFiles/firmware.dir/USB_DEVICE/App/usb_device.c.i
 
 cube/CMakeFiles/firmware.dir/USB_DEVICE/App/usb_device.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/firmware.dir/USB_DEVICE/App/usb_device.c.s"
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/cube/USB_DEVICE/App/usb_device.c -o CMakeFiles/firmware.dir/USB_DEVICE/App/usb_device.c.s
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/cube/USB_DEVICE/App/usb_device.c -o CMakeFiles/firmware.dir/USB_DEVICE/App/usb_device.c.s
 
 cube/CMakeFiles/firmware.dir/USB_DEVICE/App/usbd_desc.c.obj: cube/CMakeFiles/firmware.dir/flags.make
-cube/CMakeFiles/firmware.dir/USB_DEVICE/App/usbd_desc.c.obj: /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/cube/USB_DEVICE/App/usbd_desc.c
+cube/CMakeFiles/firmware.dir/USB_DEVICE/App/usbd_desc.c.obj: /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/cube/USB_DEVICE/App/usbd_desc.c
 cube/CMakeFiles/firmware.dir/USB_DEVICE/App/usbd_desc.c.obj: cube/CMakeFiles/firmware.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object cube/CMakeFiles/firmware.dir/USB_DEVICE/App/usbd_desc.c.obj"
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT cube/CMakeFiles/firmware.dir/USB_DEVICE/App/usbd_desc.c.obj -MF CMakeFiles/firmware.dir/USB_DEVICE/App/usbd_desc.c.obj.d -o CMakeFiles/firmware.dir/USB_DEVICE/App/usbd_desc.c.obj -c /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/cube/USB_DEVICE/App/usbd_desc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object cube/CMakeFiles/firmware.dir/USB_DEVICE/App/usbd_desc.c.obj"
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT cube/CMakeFiles/firmware.dir/USB_DEVICE/App/usbd_desc.c.obj -MF CMakeFiles/firmware.dir/USB_DEVICE/App/usbd_desc.c.obj.d -o CMakeFiles/firmware.dir/USB_DEVICE/App/usbd_desc.c.obj -c /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/cube/USB_DEVICE/App/usbd_desc.c
 
 cube/CMakeFiles/firmware.dir/USB_DEVICE/App/usbd_desc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/firmware.dir/USB_DEVICE/App/usbd_desc.c.i"
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/cube/USB_DEVICE/App/usbd_desc.c > CMakeFiles/firmware.dir/USB_DEVICE/App/usbd_desc.c.i
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/cube/USB_DEVICE/App/usbd_desc.c > CMakeFiles/firmware.dir/USB_DEVICE/App/usbd_desc.c.i
 
 cube/CMakeFiles/firmware.dir/USB_DEVICE/App/usbd_desc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/firmware.dir/USB_DEVICE/App/usbd_desc.c.s"
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/cube/USB_DEVICE/App/usbd_desc.c -o CMakeFiles/firmware.dir/USB_DEVICE/App/usbd_desc.c.s
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/cube/USB_DEVICE/App/usbd_desc.c -o CMakeFiles/firmware.dir/USB_DEVICE/App/usbd_desc.c.s
 
 cube/CMakeFiles/firmware.dir/USB_DEVICE/App/usbd_cdc_if.c.obj: cube/CMakeFiles/firmware.dir/flags.make
-cube/CMakeFiles/firmware.dir/USB_DEVICE/App/usbd_cdc_if.c.obj: /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/cube/USB_DEVICE/App/usbd_cdc_if.c
+cube/CMakeFiles/firmware.dir/USB_DEVICE/App/usbd_cdc_if.c.obj: /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/cube/USB_DEVICE/App/usbd_cdc_if.c
 cube/CMakeFiles/firmware.dir/USB_DEVICE/App/usbd_cdc_if.c.obj: cube/CMakeFiles/firmware.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object cube/CMakeFiles/firmware.dir/USB_DEVICE/App/usbd_cdc_if.c.obj"
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT cube/CMakeFiles/firmware.dir/USB_DEVICE/App/usbd_cdc_if.c.obj -MF CMakeFiles/firmware.dir/USB_DEVICE/App/usbd_cdc_if.c.obj.d -o CMakeFiles/firmware.dir/USB_DEVICE/App/usbd_cdc_if.c.obj -c /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/cube/USB_DEVICE/App/usbd_cdc_if.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object cube/CMakeFiles/firmware.dir/USB_DEVICE/App/usbd_cdc_if.c.obj"
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT cube/CMakeFiles/firmware.dir/USB_DEVICE/App/usbd_cdc_if.c.obj -MF CMakeFiles/firmware.dir/USB_DEVICE/App/usbd_cdc_if.c.obj.d -o CMakeFiles/firmware.dir/USB_DEVICE/App/usbd_cdc_if.c.obj -c /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/cube/USB_DEVICE/App/usbd_cdc_if.c
 
 cube/CMakeFiles/firmware.dir/USB_DEVICE/App/usbd_cdc_if.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/firmware.dir/USB_DEVICE/App/usbd_cdc_if.c.i"
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/cube/USB_DEVICE/App/usbd_cdc_if.c > CMakeFiles/firmware.dir/USB_DEVICE/App/usbd_cdc_if.c.i
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/cube/USB_DEVICE/App/usbd_cdc_if.c > CMakeFiles/firmware.dir/USB_DEVICE/App/usbd_cdc_if.c.i
 
 cube/CMakeFiles/firmware.dir/USB_DEVICE/App/usbd_cdc_if.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/firmware.dir/USB_DEVICE/App/usbd_cdc_if.c.s"
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/cube/USB_DEVICE/App/usbd_cdc_if.c -o CMakeFiles/firmware.dir/USB_DEVICE/App/usbd_cdc_if.c.s
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/cube/USB_DEVICE/App/usbd_cdc_if.c -o CMakeFiles/firmware.dir/USB_DEVICE/App/usbd_cdc_if.c.s
 
-cube/CMakeFiles/firmware.dir/Core/Src/main.cpp.obj: cube/CMakeFiles/firmware.dir/flags.make
-cube/CMakeFiles/firmware.dir/Core/Src/main.cpp.obj: /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/cube/Core/Src/main.cpp
-cube/CMakeFiles/firmware.dir/Core/Src/main.cpp.obj: cube/CMakeFiles/firmware.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object cube/CMakeFiles/firmware.dir/Core/Src/main.cpp.obj"
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube && /usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT cube/CMakeFiles/firmware.dir/Core/Src/main.cpp.obj -MF CMakeFiles/firmware.dir/Core/Src/main.cpp.obj.d -o CMakeFiles/firmware.dir/Core/Src/main.cpp.obj -c /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/cube/Core/Src/main.cpp
+cube/CMakeFiles/firmware.dir/Core/Src/main.c.obj: cube/CMakeFiles/firmware.dir/flags.make
+cube/CMakeFiles/firmware.dir/Core/Src/main.c.obj: /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/cube/Core/Src/main.c
+cube/CMakeFiles/firmware.dir/Core/Src/main.c.obj: cube/CMakeFiles/firmware.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object cube/CMakeFiles/firmware.dir/Core/Src/main.c.obj"
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT cube/CMakeFiles/firmware.dir/Core/Src/main.c.obj -MF CMakeFiles/firmware.dir/Core/Src/main.c.obj.d -o CMakeFiles/firmware.dir/Core/Src/main.c.obj -c /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/cube/Core/Src/main.c
 
-cube/CMakeFiles/firmware.dir/Core/Src/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/firmware.dir/Core/Src/main.cpp.i"
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube && /usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/cube/Core/Src/main.cpp > CMakeFiles/firmware.dir/Core/Src/main.cpp.i
+cube/CMakeFiles/firmware.dir/Core/Src/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/firmware.dir/Core/Src/main.c.i"
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/cube/Core/Src/main.c > CMakeFiles/firmware.dir/Core/Src/main.c.i
 
-cube/CMakeFiles/firmware.dir/Core/Src/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/firmware.dir/Core/Src/main.cpp.s"
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube && /usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/cube/Core/Src/main.cpp -o CMakeFiles/firmware.dir/Core/Src/main.cpp.s
+cube/CMakeFiles/firmware.dir/Core/Src/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/firmware.dir/Core/Src/main.c.s"
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/cube/Core/Src/main.c -o CMakeFiles/firmware.dir/Core/Src/main.c.s
 
 cube/CMakeFiles/firmware.dir/Core/Src/gpio.c.obj: cube/CMakeFiles/firmware.dir/flags.make
-cube/CMakeFiles/firmware.dir/Core/Src/gpio.c.obj: /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/cube/Core/Src/gpio.c
+cube/CMakeFiles/firmware.dir/Core/Src/gpio.c.obj: /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/cube/Core/Src/gpio.c
 cube/CMakeFiles/firmware.dir/Core/Src/gpio.c.obj: cube/CMakeFiles/firmware.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object cube/CMakeFiles/firmware.dir/Core/Src/gpio.c.obj"
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT cube/CMakeFiles/firmware.dir/Core/Src/gpio.c.obj -MF CMakeFiles/firmware.dir/Core/Src/gpio.c.obj.d -o CMakeFiles/firmware.dir/Core/Src/gpio.c.obj -c /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/cube/Core/Src/gpio.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object cube/CMakeFiles/firmware.dir/Core/Src/gpio.c.obj"
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT cube/CMakeFiles/firmware.dir/Core/Src/gpio.c.obj -MF CMakeFiles/firmware.dir/Core/Src/gpio.c.obj.d -o CMakeFiles/firmware.dir/Core/Src/gpio.c.obj -c /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/cube/Core/Src/gpio.c
 
 cube/CMakeFiles/firmware.dir/Core/Src/gpio.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/firmware.dir/Core/Src/gpio.c.i"
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/cube/Core/Src/gpio.c > CMakeFiles/firmware.dir/Core/Src/gpio.c.i
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/cube/Core/Src/gpio.c > CMakeFiles/firmware.dir/Core/Src/gpio.c.i
 
 cube/CMakeFiles/firmware.dir/Core/Src/gpio.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/firmware.dir/Core/Src/gpio.c.s"
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/cube/Core/Src/gpio.c -o CMakeFiles/firmware.dir/Core/Src/gpio.c.s
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/cube/Core/Src/gpio.c -o CMakeFiles/firmware.dir/Core/Src/gpio.c.s
 
 cube/CMakeFiles/firmware.dir/Core/Src/stm32f4xx_it.c.obj: cube/CMakeFiles/firmware.dir/flags.make
-cube/CMakeFiles/firmware.dir/Core/Src/stm32f4xx_it.c.obj: /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/cube/Core/Src/stm32f4xx_it.c
+cube/CMakeFiles/firmware.dir/Core/Src/stm32f4xx_it.c.obj: /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/cube/Core/Src/stm32f4xx_it.c
 cube/CMakeFiles/firmware.dir/Core/Src/stm32f4xx_it.c.obj: cube/CMakeFiles/firmware.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object cube/CMakeFiles/firmware.dir/Core/Src/stm32f4xx_it.c.obj"
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT cube/CMakeFiles/firmware.dir/Core/Src/stm32f4xx_it.c.obj -MF CMakeFiles/firmware.dir/Core/Src/stm32f4xx_it.c.obj.d -o CMakeFiles/firmware.dir/Core/Src/stm32f4xx_it.c.obj -c /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/cube/Core/Src/stm32f4xx_it.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object cube/CMakeFiles/firmware.dir/Core/Src/stm32f4xx_it.c.obj"
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT cube/CMakeFiles/firmware.dir/Core/Src/stm32f4xx_it.c.obj -MF CMakeFiles/firmware.dir/Core/Src/stm32f4xx_it.c.obj.d -o CMakeFiles/firmware.dir/Core/Src/stm32f4xx_it.c.obj -c /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/cube/Core/Src/stm32f4xx_it.c
 
 cube/CMakeFiles/firmware.dir/Core/Src/stm32f4xx_it.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/firmware.dir/Core/Src/stm32f4xx_it.c.i"
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/cube/Core/Src/stm32f4xx_it.c > CMakeFiles/firmware.dir/Core/Src/stm32f4xx_it.c.i
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/cube/Core/Src/stm32f4xx_it.c > CMakeFiles/firmware.dir/Core/Src/stm32f4xx_it.c.i
 
 cube/CMakeFiles/firmware.dir/Core/Src/stm32f4xx_it.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/firmware.dir/Core/Src/stm32f4xx_it.c.s"
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/cube/Core/Src/stm32f4xx_it.c -o CMakeFiles/firmware.dir/Core/Src/stm32f4xx_it.c.s
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/cube/Core/Src/stm32f4xx_it.c -o CMakeFiles/firmware.dir/Core/Src/stm32f4xx_it.c.s
 
 cube/CMakeFiles/firmware.dir/Core/Src/stm32f4xx_hal_msp.c.obj: cube/CMakeFiles/firmware.dir/flags.make
-cube/CMakeFiles/firmware.dir/Core/Src/stm32f4xx_hal_msp.c.obj: /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/cube/Core/Src/stm32f4xx_hal_msp.c
+cube/CMakeFiles/firmware.dir/Core/Src/stm32f4xx_hal_msp.c.obj: /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/cube/Core/Src/stm32f4xx_hal_msp.c
 cube/CMakeFiles/firmware.dir/Core/Src/stm32f4xx_hal_msp.c.obj: cube/CMakeFiles/firmware.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object cube/CMakeFiles/firmware.dir/Core/Src/stm32f4xx_hal_msp.c.obj"
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT cube/CMakeFiles/firmware.dir/Core/Src/stm32f4xx_hal_msp.c.obj -MF CMakeFiles/firmware.dir/Core/Src/stm32f4xx_hal_msp.c.obj.d -o CMakeFiles/firmware.dir/Core/Src/stm32f4xx_hal_msp.c.obj -c /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/cube/Core/Src/stm32f4xx_hal_msp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object cube/CMakeFiles/firmware.dir/Core/Src/stm32f4xx_hal_msp.c.obj"
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT cube/CMakeFiles/firmware.dir/Core/Src/stm32f4xx_hal_msp.c.obj -MF CMakeFiles/firmware.dir/Core/Src/stm32f4xx_hal_msp.c.obj.d -o CMakeFiles/firmware.dir/Core/Src/stm32f4xx_hal_msp.c.obj -c /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/cube/Core/Src/stm32f4xx_hal_msp.c
 
 cube/CMakeFiles/firmware.dir/Core/Src/stm32f4xx_hal_msp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/firmware.dir/Core/Src/stm32f4xx_hal_msp.c.i"
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/cube/Core/Src/stm32f4xx_hal_msp.c > CMakeFiles/firmware.dir/Core/Src/stm32f4xx_hal_msp.c.i
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/cube/Core/Src/stm32f4xx_hal_msp.c > CMakeFiles/firmware.dir/Core/Src/stm32f4xx_hal_msp.c.i
 
 cube/CMakeFiles/firmware.dir/Core/Src/stm32f4xx_hal_msp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/firmware.dir/Core/Src/stm32f4xx_hal_msp.c.s"
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/cube/Core/Src/stm32f4xx_hal_msp.c -o CMakeFiles/firmware.dir/Core/Src/stm32f4xx_hal_msp.c.s
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/cube/Core/Src/stm32f4xx_hal_msp.c -o CMakeFiles/firmware.dir/Core/Src/stm32f4xx_hal_msp.c.s
 
 cube/CMakeFiles/firmware.dir/Core/Src/sysmem.c.obj: cube/CMakeFiles/firmware.dir/flags.make
-cube/CMakeFiles/firmware.dir/Core/Src/sysmem.c.obj: /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/cube/Core/Src/sysmem.c
+cube/CMakeFiles/firmware.dir/Core/Src/sysmem.c.obj: /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/cube/Core/Src/sysmem.c
 cube/CMakeFiles/firmware.dir/Core/Src/sysmem.c.obj: cube/CMakeFiles/firmware.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object cube/CMakeFiles/firmware.dir/Core/Src/sysmem.c.obj"
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT cube/CMakeFiles/firmware.dir/Core/Src/sysmem.c.obj -MF CMakeFiles/firmware.dir/Core/Src/sysmem.c.obj.d -o CMakeFiles/firmware.dir/Core/Src/sysmem.c.obj -c /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/cube/Core/Src/sysmem.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object cube/CMakeFiles/firmware.dir/Core/Src/sysmem.c.obj"
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT cube/CMakeFiles/firmware.dir/Core/Src/sysmem.c.obj -MF CMakeFiles/firmware.dir/Core/Src/sysmem.c.obj.d -o CMakeFiles/firmware.dir/Core/Src/sysmem.c.obj -c /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/cube/Core/Src/sysmem.c
 
 cube/CMakeFiles/firmware.dir/Core/Src/sysmem.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/firmware.dir/Core/Src/sysmem.c.i"
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/cube/Core/Src/sysmem.c > CMakeFiles/firmware.dir/Core/Src/sysmem.c.i
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/cube/Core/Src/sysmem.c > CMakeFiles/firmware.dir/Core/Src/sysmem.c.i
 
 cube/CMakeFiles/firmware.dir/Core/Src/sysmem.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/firmware.dir/Core/Src/sysmem.c.s"
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/cube/Core/Src/sysmem.c -o CMakeFiles/firmware.dir/Core/Src/sysmem.c.s
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/cube/Core/Src/sysmem.c -o CMakeFiles/firmware.dir/Core/Src/sysmem.c.s
 
 cube/CMakeFiles/firmware.dir/Core/Src/syscalls.c.obj: cube/CMakeFiles/firmware.dir/flags.make
-cube/CMakeFiles/firmware.dir/Core/Src/syscalls.c.obj: /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/cube/Core/Src/syscalls.c
+cube/CMakeFiles/firmware.dir/Core/Src/syscalls.c.obj: /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/cube/Core/Src/syscalls.c
 cube/CMakeFiles/firmware.dir/Core/Src/syscalls.c.obj: cube/CMakeFiles/firmware.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object cube/CMakeFiles/firmware.dir/Core/Src/syscalls.c.obj"
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT cube/CMakeFiles/firmware.dir/Core/Src/syscalls.c.obj -MF CMakeFiles/firmware.dir/Core/Src/syscalls.c.obj.d -o CMakeFiles/firmware.dir/Core/Src/syscalls.c.obj -c /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/cube/Core/Src/syscalls.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object cube/CMakeFiles/firmware.dir/Core/Src/syscalls.c.obj"
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT cube/CMakeFiles/firmware.dir/Core/Src/syscalls.c.obj -MF CMakeFiles/firmware.dir/Core/Src/syscalls.c.obj.d -o CMakeFiles/firmware.dir/Core/Src/syscalls.c.obj -c /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/cube/Core/Src/syscalls.c
 
 cube/CMakeFiles/firmware.dir/Core/Src/syscalls.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/firmware.dir/Core/Src/syscalls.c.i"
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/cube/Core/Src/syscalls.c > CMakeFiles/firmware.dir/Core/Src/syscalls.c.i
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/cube/Core/Src/syscalls.c > CMakeFiles/firmware.dir/Core/Src/syscalls.c.i
 
 cube/CMakeFiles/firmware.dir/Core/Src/syscalls.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/firmware.dir/Core/Src/syscalls.c.s"
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/cube/Core/Src/syscalls.c -o CMakeFiles/firmware.dir/Core/Src/syscalls.c.s
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/cube/Core/Src/syscalls.c -o CMakeFiles/firmware.dir/Core/Src/syscalls.c.s
 
 cube/CMakeFiles/firmware.dir/startup_stm32f446xx.s.obj: cube/CMakeFiles/firmware.dir/flags.make
-cube/CMakeFiles/firmware.dir/startup_stm32f446xx.s.obj: /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/cube/startup_stm32f446xx.s
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building ASM object cube/CMakeFiles/firmware.dir/startup_stm32f446xx.s.obj"
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/firmware.dir/startup_stm32f446xx.s.obj -c /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/cube/startup_stm32f446xx.s
+cube/CMakeFiles/firmware.dir/startup_stm32f446xx.s.obj: /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/cube/startup_stm32f446xx.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building ASM object cube/CMakeFiles/firmware.dir/startup_stm32f446xx.s.obj"
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/firmware.dir/startup_stm32f446xx.s.obj -c /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/cube/startup_stm32f446xx.s
 
 cube/CMakeFiles/firmware.dir/startup_stm32f446xx.s.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing ASM source to CMakeFiles/firmware.dir/startup_stm32f446xx.s.i"
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/cube/startup_stm32f446xx.s > CMakeFiles/firmware.dir/startup_stm32f446xx.s.i
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/cube/startup_stm32f446xx.s > CMakeFiles/firmware.dir/startup_stm32f446xx.s.i
 
 cube/CMakeFiles/firmware.dir/startup_stm32f446xx.s.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/firmware.dir/startup_stm32f446xx.s.s"
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/cube/startup_stm32f446xx.s -o CMakeFiles/firmware.dir/startup_stm32f446xx.s.s
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/cube/startup_stm32f446xx.s -o CMakeFiles/firmware.dir/startup_stm32f446xx.s.s
 
 cube/CMakeFiles/firmware.dir/__/src/core.cpp.obj: cube/CMakeFiles/firmware.dir/flags.make
-cube/CMakeFiles/firmware.dir/__/src/core.cpp.obj: /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/src/core.cpp
+cube/CMakeFiles/firmware.dir/__/src/core.cpp.obj: /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/src/core.cpp
 cube/CMakeFiles/firmware.dir/__/src/core.cpp.obj: cube/CMakeFiles/firmware.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object cube/CMakeFiles/firmware.dir/__/src/core.cpp.obj"
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube && /usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT cube/CMakeFiles/firmware.dir/__/src/core.cpp.obj -MF CMakeFiles/firmware.dir/__/src/core.cpp.obj.d -o CMakeFiles/firmware.dir/__/src/core.cpp.obj -c /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/src/core.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object cube/CMakeFiles/firmware.dir/__/src/core.cpp.obj"
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube && /usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT cube/CMakeFiles/firmware.dir/__/src/core.cpp.obj -MF CMakeFiles/firmware.dir/__/src/core.cpp.obj.d -o CMakeFiles/firmware.dir/__/src/core.cpp.obj -c /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/src/core.cpp
 
 cube/CMakeFiles/firmware.dir/__/src/core.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/firmware.dir/__/src/core.cpp.i"
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube && /usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/src/core.cpp > CMakeFiles/firmware.dir/__/src/core.cpp.i
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube && /usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/src/core.cpp > CMakeFiles/firmware.dir/__/src/core.cpp.i
 
 cube/CMakeFiles/firmware.dir/__/src/core.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/firmware.dir/__/src/core.cpp.s"
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube && /usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/src/core.cpp -o CMakeFiles/firmware.dir/__/src/core.cpp.s
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube && /usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/src/core.cpp -o CMakeFiles/firmware.dir/__/src/core.cpp.s
 
 # Object files for target firmware
 firmware_OBJECTS = \
@@ -242,7 +242,7 @@ firmware_OBJECTS = \
 "CMakeFiles/firmware.dir/USB_DEVICE/App/usb_device.c.obj" \
 "CMakeFiles/firmware.dir/USB_DEVICE/App/usbd_desc.c.obj" \
 "CMakeFiles/firmware.dir/USB_DEVICE/App/usbd_cdc_if.c.obj" \
-"CMakeFiles/firmware.dir/Core/Src/main.cpp.obj" \
+"CMakeFiles/firmware.dir/Core/Src/main.c.obj" \
 "CMakeFiles/firmware.dir/Core/Src/gpio.c.obj" \
 "CMakeFiles/firmware.dir/Core/Src/stm32f4xx_it.c.obj" \
 "CMakeFiles/firmware.dir/Core/Src/stm32f4xx_hal_msp.c.obj" \
@@ -253,33 +253,33 @@ firmware_OBJECTS = \
 
 # External object files for target firmware
 firmware_EXTERNAL_OBJECTS = \
-"/home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj" \
-"/home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c.obj" \
-"/home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c.obj" \
-"/home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c.obj" \
-"/home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj" \
-"/home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj" \
-"/home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj" \
-"/home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj" \
-"/home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj" \
-"/home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj" \
-"/home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj" \
-"/home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj" \
-"/home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj" \
-"/home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj" \
-"/home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj" \
-"/home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj" \
-"/home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj" \
-"/home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube/cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj" \
-"/home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube/cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj" \
-"/home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube/cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj" \
-"/home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube/cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj"
+"/home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj" \
+"/home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c.obj" \
+"/home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c.obj" \
+"/home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c.obj" \
+"/home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj" \
+"/home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj" \
+"/home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj" \
+"/home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj" \
+"/home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj" \
+"/home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj" \
+"/home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj" \
+"/home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj" \
+"/home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj" \
+"/home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj" \
+"/home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj" \
+"/home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj" \
+"/home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj" \
+"/home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube/cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj" \
+"/home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube/cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj" \
+"/home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube/cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj" \
+"/home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube/cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj"
 
 cube/firmware.elf: cube/CMakeFiles/firmware.dir/USB_DEVICE/Target/usbd_conf.c.obj
 cube/firmware.elf: cube/CMakeFiles/firmware.dir/USB_DEVICE/App/usb_device.c.obj
 cube/firmware.elf: cube/CMakeFiles/firmware.dir/USB_DEVICE/App/usbd_desc.c.obj
 cube/firmware.elf: cube/CMakeFiles/firmware.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
-cube/firmware.elf: cube/CMakeFiles/firmware.dir/Core/Src/main.cpp.obj
+cube/firmware.elf: cube/CMakeFiles/firmware.dir/Core/Src/main.c.obj
 cube/firmware.elf: cube/CMakeFiles/firmware.dir/Core/Src/gpio.c.obj
 cube/firmware.elf: cube/CMakeFiles/firmware.dir/Core/Src/stm32f4xx_it.c.obj
 cube/firmware.elf: cube/CMakeFiles/firmware.dir/Core/Src/stm32f4xx_hal_msp.c.obj
@@ -309,21 +309,25 @@ cube/firmware.elf: cube/cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/_
 cube/firmware.elf: cube/cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj
 cube/firmware.elf: cube/cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/__/__/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
 cube/firmware.elf: cube/CMakeFiles/firmware.dir/build.make
+cube/firmware.elf: lib/EmbeddedLib/libEmbeddedLib.a
+cube/firmware.elf: lib/WireLib/libWireLib.a
+cube/firmware.elf: lib/ActionLib/libActionLib.a
+cube/firmware.elf: lib/EmbeddedLib/libEmbeddedLib.a
 cube/firmware.elf: cube/CMakeFiles/firmware.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable firmware.elf"
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/firmware.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable firmware.elf"
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/firmware.dir/link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Generating binary (.bin) from ELF"
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube && arm-none-eabi-objcopy -O binary /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube/firmware.elf /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/firmware.bin
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube && arm-none-eabi-objcopy -O binary /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube/firmware.elf /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/firmware.bin
 
 # Rule to build all files generated by this target.
 cube/CMakeFiles/firmware.dir/build: cube/firmware.elf
 .PHONY : cube/CMakeFiles/firmware.dir/build
 
 cube/CMakeFiles/firmware.dir/clean:
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube && $(CMAKE_COMMAND) -P CMakeFiles/firmware.dir/cmake_clean.cmake
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube && $(CMAKE_COMMAND) -P CMakeFiles/firmware.dir/cmake_clean.cmake
 .PHONY : cube/CMakeFiles/firmware.dir/clean
 
 cube/CMakeFiles/firmware.dir/depend:
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/cube /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube/CMakeFiles/firmware.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/cube /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube/CMakeFiles/firmware.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : cube/CMakeFiles/firmware.dir/depend
 

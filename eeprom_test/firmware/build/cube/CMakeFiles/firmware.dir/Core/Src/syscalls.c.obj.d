@@ -1,5 +1,5 @@
 cube/CMakeFiles/firmware.dir/Core/Src/syscalls.c.obj: \
- /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/cube/Core/Src/syscalls.c \
+ /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/cube/Core/Src/syscalls.c \
  /usr/include/newlib/sys/stat.h /usr/include/newlib/_ansi.h \
  /usr/include/newlib/newlib.h /usr/include/newlib/_newlib_version.h \
  /usr/include/newlib/sys/config.h /usr/include/newlib/machine/ieeefp.h \

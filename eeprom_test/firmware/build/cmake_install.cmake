@@ -1,4 +1,4 @@
-# Install script for directory: /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware
+# Install script for directory: /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,22 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube/cmake_install.cmake")
+  include("/home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/lib/EmbeddedLib/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/lib/WireLib/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/lib/ActionLib/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -50,5 +65,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

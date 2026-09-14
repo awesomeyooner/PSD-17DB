@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware
+CMAKE_SOURCE_DIR = /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build
+CMAKE_BINARY_DIR = /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build
 
 # Utility rule file for flash_stlink.
 
@@ -67,8 +67,8 @@ include cube/CMakeFiles/flash_stlink.dir/compiler_depend.make
 include cube/CMakeFiles/flash_stlink.dir/progress.make
 
 cube/CMakeFiles/flash_stlink: cube/firmware.elf
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Flashing STM32 via ST-Link/OpenOCD"
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube && /usr/bin/openocd -f interface/stlink.cfg -f target/stm32f4x.cfg -c program\ /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube/firmware.elf\ verify\ reset\ exit
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Flashing STM32 via ST-Link/OpenOCD"
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube && /usr/bin/openocd -f interface/stlink.cfg -f target/stm32f4x.cfg -c program\ /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube/firmware.elf\ verify\ reset\ exit
 
 flash_stlink: cube/CMakeFiles/flash_stlink
 flash_stlink: cube/CMakeFiles/flash_stlink.dir/build.make
@@ -79,10 +79,10 @@ cube/CMakeFiles/flash_stlink.dir/build: flash_stlink
 .PHONY : cube/CMakeFiles/flash_stlink.dir/build
 
 cube/CMakeFiles/flash_stlink.dir/clean:
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube && $(CMAKE_COMMAND) -P CMakeFiles/flash_stlink.dir/cmake_clean.cmake
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube && $(CMAKE_COMMAND) -P CMakeFiles/flash_stlink.dir/cmake_clean.cmake
 .PHONY : cube/CMakeFiles/flash_stlink.dir/clean
 
 cube/CMakeFiles/flash_stlink.dir/depend:
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/cube /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube/CMakeFiles/flash_stlink.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/cube /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube/CMakeFiles/flash_stlink.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : cube/CMakeFiles/flash_stlink.dir/depend
 

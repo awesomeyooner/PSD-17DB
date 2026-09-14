@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware
+CMAKE_SOURCE_DIR = /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build
+CMAKE_BINARY_DIR = /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/CMakeFiles /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube//CMakeFiles/progress.marks
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cube/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/CMakeFiles 0
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/CMakeFiles /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube//CMakeFiles/progress.marks
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cube/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cube/clean
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cube/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cube/preinstall
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cube/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cube/preinstall
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cube/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 cube/CMakeFiles/firmware.dir/rule:
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cube/CMakeFiles/firmware.dir/rule
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cube/CMakeFiles/firmware.dir/rule
 .PHONY : cube/CMakeFiles/firmware.dir/rule
 
 # Convenience name for target.
@@ -127,12 +127,12 @@ firmware: cube/CMakeFiles/firmware.dir/rule
 
 # fast build rule for target.
 firmware/fast:
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/build
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/build
 .PHONY : firmware/fast
 
 # Convenience name for target.
 cube/CMakeFiles/flash_dfu.dir/rule:
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cube/CMakeFiles/flash_dfu.dir/rule
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cube/CMakeFiles/flash_dfu.dir/rule
 .PHONY : cube/CMakeFiles/flash_dfu.dir/rule
 
 # Convenience name for target.
@@ -141,12 +141,12 @@ flash_dfu: cube/CMakeFiles/flash_dfu.dir/rule
 
 # fast build rule for target.
 flash_dfu/fast:
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/flash_dfu.dir/build.make cube/CMakeFiles/flash_dfu.dir/build
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/flash_dfu.dir/build.make cube/CMakeFiles/flash_dfu.dir/build
 .PHONY : flash_dfu/fast
 
 # Convenience name for target.
 cube/CMakeFiles/flash_stlink.dir/rule:
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cube/CMakeFiles/flash_stlink.dir/rule
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cube/CMakeFiles/flash_stlink.dir/rule
 .PHONY : cube/CMakeFiles/flash_stlink.dir/rule
 
 # Convenience name for target.
@@ -155,7 +155,7 @@ flash_stlink: cube/CMakeFiles/flash_stlink.dir/rule
 
 # fast build rule for target.
 flash_stlink/fast:
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/flash_stlink.dir/build.make cube/CMakeFiles/flash_stlink.dir/build
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/flash_stlink.dir/build.make cube/CMakeFiles/flash_stlink.dir/build
 .PHONY : flash_stlink/fast
 
 Core/Src/gpio.obj: Core/Src/gpio.c.obj
@@ -163,7 +163,7 @@ Core/Src/gpio.obj: Core/Src/gpio.c.obj
 
 # target to build an object file
 Core/Src/gpio.c.obj:
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/Core/Src/gpio.c.obj
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/Core/Src/gpio.c.obj
 .PHONY : Core/Src/gpio.c.obj
 
 Core/Src/gpio.i: Core/Src/gpio.c.i
@@ -171,7 +171,7 @@ Core/Src/gpio.i: Core/Src/gpio.c.i
 
 # target to preprocess a source file
 Core/Src/gpio.c.i:
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/Core/Src/gpio.c.i
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/Core/Src/gpio.c.i
 .PHONY : Core/Src/gpio.c.i
 
 Core/Src/gpio.s: Core/Src/gpio.c.s
@@ -179,39 +179,39 @@ Core/Src/gpio.s: Core/Src/gpio.c.s
 
 # target to generate assembly for a file
 Core/Src/gpio.c.s:
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/Core/Src/gpio.c.s
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/Core/Src/gpio.c.s
 .PHONY : Core/Src/gpio.c.s
 
-Core/Src/main.obj: Core/Src/main.cpp.obj
+Core/Src/main.obj: Core/Src/main.c.obj
 .PHONY : Core/Src/main.obj
 
 # target to build an object file
-Core/Src/main.cpp.obj:
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/Core/Src/main.cpp.obj
-.PHONY : Core/Src/main.cpp.obj
+Core/Src/main.c.obj:
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/Core/Src/main.c.obj
+.PHONY : Core/Src/main.c.obj
 
-Core/Src/main.i: Core/Src/main.cpp.i
+Core/Src/main.i: Core/Src/main.c.i
 .PHONY : Core/Src/main.i
 
 # target to preprocess a source file
-Core/Src/main.cpp.i:
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/Core/Src/main.cpp.i
-.PHONY : Core/Src/main.cpp.i
+Core/Src/main.c.i:
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/Core/Src/main.c.i
+.PHONY : Core/Src/main.c.i
 
-Core/Src/main.s: Core/Src/main.cpp.s
+Core/Src/main.s: Core/Src/main.c.s
 .PHONY : Core/Src/main.s
 
 # target to generate assembly for a file
-Core/Src/main.cpp.s:
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/Core/Src/main.cpp.s
-.PHONY : Core/Src/main.cpp.s
+Core/Src/main.c.s:
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/Core/Src/main.c.s
+.PHONY : Core/Src/main.c.s
 
 Core/Src/stm32f4xx_hal_msp.obj: Core/Src/stm32f4xx_hal_msp.c.obj
 .PHONY : Core/Src/stm32f4xx_hal_msp.obj
 
 # target to build an object file
 Core/Src/stm32f4xx_hal_msp.c.obj:
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/Core/Src/stm32f4xx_hal_msp.c.obj
 .PHONY : Core/Src/stm32f4xx_hal_msp.c.obj
 
 Core/Src/stm32f4xx_hal_msp.i: Core/Src/stm32f4xx_hal_msp.c.i
@@ -219,7 +219,7 @@ Core/Src/stm32f4xx_hal_msp.i: Core/Src/stm32f4xx_hal_msp.c.i
 
 # target to preprocess a source file
 Core/Src/stm32f4xx_hal_msp.c.i:
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/Core/Src/stm32f4xx_hal_msp.c.i
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/Core/Src/stm32f4xx_hal_msp.c.i
 .PHONY : Core/Src/stm32f4xx_hal_msp.c.i
 
 Core/Src/stm32f4xx_hal_msp.s: Core/Src/stm32f4xx_hal_msp.c.s
@@ -227,7 +227,7 @@ Core/Src/stm32f4xx_hal_msp.s: Core/Src/stm32f4xx_hal_msp.c.s
 
 # target to generate assembly for a file
 Core/Src/stm32f4xx_hal_msp.c.s:
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/Core/Src/stm32f4xx_hal_msp.c.s
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/Core/Src/stm32f4xx_hal_msp.c.s
 .PHONY : Core/Src/stm32f4xx_hal_msp.c.s
 
 Core/Src/stm32f4xx_it.obj: Core/Src/stm32f4xx_it.c.obj
@@ -235,7 +235,7 @@ Core/Src/stm32f4xx_it.obj: Core/Src/stm32f4xx_it.c.obj
 
 # target to build an object file
 Core/Src/stm32f4xx_it.c.obj:
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/Core/Src/stm32f4xx_it.c.obj
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/Core/Src/stm32f4xx_it.c.obj
 .PHONY : Core/Src/stm32f4xx_it.c.obj
 
 Core/Src/stm32f4xx_it.i: Core/Src/stm32f4xx_it.c.i
@@ -243,7 +243,7 @@ Core/Src/stm32f4xx_it.i: Core/Src/stm32f4xx_it.c.i
 
 # target to preprocess a source file
 Core/Src/stm32f4xx_it.c.i:
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/Core/Src/stm32f4xx_it.c.i
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/Core/Src/stm32f4xx_it.c.i
 .PHONY : Core/Src/stm32f4xx_it.c.i
 
 Core/Src/stm32f4xx_it.s: Core/Src/stm32f4xx_it.c.s
@@ -251,7 +251,7 @@ Core/Src/stm32f4xx_it.s: Core/Src/stm32f4xx_it.c.s
 
 # target to generate assembly for a file
 Core/Src/stm32f4xx_it.c.s:
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/Core/Src/stm32f4xx_it.c.s
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/Core/Src/stm32f4xx_it.c.s
 .PHONY : Core/Src/stm32f4xx_it.c.s
 
 Core/Src/syscalls.obj: Core/Src/syscalls.c.obj
@@ -259,7 +259,7 @@ Core/Src/syscalls.obj: Core/Src/syscalls.c.obj
 
 # target to build an object file
 Core/Src/syscalls.c.obj:
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/Core/Src/syscalls.c.obj
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/Core/Src/syscalls.c.obj
 .PHONY : Core/Src/syscalls.c.obj
 
 Core/Src/syscalls.i: Core/Src/syscalls.c.i
@@ -267,7 +267,7 @@ Core/Src/syscalls.i: Core/Src/syscalls.c.i
 
 # target to preprocess a source file
 Core/Src/syscalls.c.i:
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/Core/Src/syscalls.c.i
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/Core/Src/syscalls.c.i
 .PHONY : Core/Src/syscalls.c.i
 
 Core/Src/syscalls.s: Core/Src/syscalls.c.s
@@ -275,7 +275,7 @@ Core/Src/syscalls.s: Core/Src/syscalls.c.s
 
 # target to generate assembly for a file
 Core/Src/syscalls.c.s:
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/Core/Src/syscalls.c.s
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/Core/Src/syscalls.c.s
 .PHONY : Core/Src/syscalls.c.s
 
 Core/Src/sysmem.obj: Core/Src/sysmem.c.obj
@@ -283,7 +283,7 @@ Core/Src/sysmem.obj: Core/Src/sysmem.c.obj
 
 # target to build an object file
 Core/Src/sysmem.c.obj:
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/Core/Src/sysmem.c.obj
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/Core/Src/sysmem.c.obj
 .PHONY : Core/Src/sysmem.c.obj
 
 Core/Src/sysmem.i: Core/Src/sysmem.c.i
@@ -291,7 +291,7 @@ Core/Src/sysmem.i: Core/Src/sysmem.c.i
 
 # target to preprocess a source file
 Core/Src/sysmem.c.i:
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/Core/Src/sysmem.c.i
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/Core/Src/sysmem.c.i
 .PHONY : Core/Src/sysmem.c.i
 
 Core/Src/sysmem.s: Core/Src/sysmem.c.s
@@ -299,7 +299,7 @@ Core/Src/sysmem.s: Core/Src/sysmem.c.s
 
 # target to generate assembly for a file
 Core/Src/sysmem.c.s:
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/Core/Src/sysmem.c.s
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/Core/Src/sysmem.c.s
 .PHONY : Core/Src/sysmem.c.s
 
 USB_DEVICE/App/usb_device.obj: USB_DEVICE/App/usb_device.c.obj
@@ -307,7 +307,7 @@ USB_DEVICE/App/usb_device.obj: USB_DEVICE/App/usb_device.c.obj
 
 # target to build an object file
 USB_DEVICE/App/usb_device.c.obj:
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/USB_DEVICE/App/usb_device.c.obj
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/USB_DEVICE/App/usb_device.c.obj
 .PHONY : USB_DEVICE/App/usb_device.c.obj
 
 USB_DEVICE/App/usb_device.i: USB_DEVICE/App/usb_device.c.i
@@ -315,7 +315,7 @@ USB_DEVICE/App/usb_device.i: USB_DEVICE/App/usb_device.c.i
 
 # target to preprocess a source file
 USB_DEVICE/App/usb_device.c.i:
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/USB_DEVICE/App/usb_device.c.i
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/USB_DEVICE/App/usb_device.c.i
 .PHONY : USB_DEVICE/App/usb_device.c.i
 
 USB_DEVICE/App/usb_device.s: USB_DEVICE/App/usb_device.c.s
@@ -323,7 +323,7 @@ USB_DEVICE/App/usb_device.s: USB_DEVICE/App/usb_device.c.s
 
 # target to generate assembly for a file
 USB_DEVICE/App/usb_device.c.s:
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/USB_DEVICE/App/usb_device.c.s
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/USB_DEVICE/App/usb_device.c.s
 .PHONY : USB_DEVICE/App/usb_device.c.s
 
 USB_DEVICE/App/usbd_cdc_if.obj: USB_DEVICE/App/usbd_cdc_if.c.obj
@@ -331,7 +331,7 @@ USB_DEVICE/App/usbd_cdc_if.obj: USB_DEVICE/App/usbd_cdc_if.c.obj
 
 # target to build an object file
 USB_DEVICE/App/usbd_cdc_if.c.obj:
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
 .PHONY : USB_DEVICE/App/usbd_cdc_if.c.obj
 
 USB_DEVICE/App/usbd_cdc_if.i: USB_DEVICE/App/usbd_cdc_if.c.i
@@ -339,7 +339,7 @@ USB_DEVICE/App/usbd_cdc_if.i: USB_DEVICE/App/usbd_cdc_if.c.i
 
 # target to preprocess a source file
 USB_DEVICE/App/usbd_cdc_if.c.i:
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/USB_DEVICE/App/usbd_cdc_if.c.i
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/USB_DEVICE/App/usbd_cdc_if.c.i
 .PHONY : USB_DEVICE/App/usbd_cdc_if.c.i
 
 USB_DEVICE/App/usbd_cdc_if.s: USB_DEVICE/App/usbd_cdc_if.c.s
@@ -347,7 +347,7 @@ USB_DEVICE/App/usbd_cdc_if.s: USB_DEVICE/App/usbd_cdc_if.c.s
 
 # target to generate assembly for a file
 USB_DEVICE/App/usbd_cdc_if.c.s:
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/USB_DEVICE/App/usbd_cdc_if.c.s
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/USB_DEVICE/App/usbd_cdc_if.c.s
 .PHONY : USB_DEVICE/App/usbd_cdc_if.c.s
 
 USB_DEVICE/App/usbd_desc.obj: USB_DEVICE/App/usbd_desc.c.obj
@@ -355,7 +355,7 @@ USB_DEVICE/App/usbd_desc.obj: USB_DEVICE/App/usbd_desc.c.obj
 
 # target to build an object file
 USB_DEVICE/App/usbd_desc.c.obj:
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/USB_DEVICE/App/usbd_desc.c.obj
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/USB_DEVICE/App/usbd_desc.c.obj
 .PHONY : USB_DEVICE/App/usbd_desc.c.obj
 
 USB_DEVICE/App/usbd_desc.i: USB_DEVICE/App/usbd_desc.c.i
@@ -363,7 +363,7 @@ USB_DEVICE/App/usbd_desc.i: USB_DEVICE/App/usbd_desc.c.i
 
 # target to preprocess a source file
 USB_DEVICE/App/usbd_desc.c.i:
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/USB_DEVICE/App/usbd_desc.c.i
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/USB_DEVICE/App/usbd_desc.c.i
 .PHONY : USB_DEVICE/App/usbd_desc.c.i
 
 USB_DEVICE/App/usbd_desc.s: USB_DEVICE/App/usbd_desc.c.s
@@ -371,7 +371,7 @@ USB_DEVICE/App/usbd_desc.s: USB_DEVICE/App/usbd_desc.c.s
 
 # target to generate assembly for a file
 USB_DEVICE/App/usbd_desc.c.s:
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/USB_DEVICE/App/usbd_desc.c.s
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/USB_DEVICE/App/usbd_desc.c.s
 .PHONY : USB_DEVICE/App/usbd_desc.c.s
 
 USB_DEVICE/Target/usbd_conf.obj: USB_DEVICE/Target/usbd_conf.c.obj
@@ -379,7 +379,7 @@ USB_DEVICE/Target/usbd_conf.obj: USB_DEVICE/Target/usbd_conf.c.obj
 
 # target to build an object file
 USB_DEVICE/Target/usbd_conf.c.obj:
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/USB_DEVICE/Target/usbd_conf.c.obj
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/USB_DEVICE/Target/usbd_conf.c.obj
 .PHONY : USB_DEVICE/Target/usbd_conf.c.obj
 
 USB_DEVICE/Target/usbd_conf.i: USB_DEVICE/Target/usbd_conf.c.i
@@ -387,7 +387,7 @@ USB_DEVICE/Target/usbd_conf.i: USB_DEVICE/Target/usbd_conf.c.i
 
 # target to preprocess a source file
 USB_DEVICE/Target/usbd_conf.c.i:
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/USB_DEVICE/Target/usbd_conf.c.i
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/USB_DEVICE/Target/usbd_conf.c.i
 .PHONY : USB_DEVICE/Target/usbd_conf.c.i
 
 USB_DEVICE/Target/usbd_conf.s: USB_DEVICE/Target/usbd_conf.c.s
@@ -395,7 +395,7 @@ USB_DEVICE/Target/usbd_conf.s: USB_DEVICE/Target/usbd_conf.c.s
 
 # target to generate assembly for a file
 USB_DEVICE/Target/usbd_conf.c.s:
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/USB_DEVICE/Target/usbd_conf.c.s
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/USB_DEVICE/Target/usbd_conf.c.s
 .PHONY : USB_DEVICE/Target/usbd_conf.c.s
 
 __/src/core.obj: __/src/core.cpp.obj
@@ -403,7 +403,7 @@ __/src/core.obj: __/src/core.cpp.obj
 
 # target to build an object file
 __/src/core.cpp.obj:
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/__/src/core.cpp.obj
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/__/src/core.cpp.obj
 .PHONY : __/src/core.cpp.obj
 
 __/src/core.i: __/src/core.cpp.i
@@ -411,7 +411,7 @@ __/src/core.i: __/src/core.cpp.i
 
 # target to preprocess a source file
 __/src/core.cpp.i:
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/__/src/core.cpp.i
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/__/src/core.cpp.i
 .PHONY : __/src/core.cpp.i
 
 __/src/core.s: __/src/core.cpp.s
@@ -419,7 +419,7 @@ __/src/core.s: __/src/core.cpp.s
 
 # target to generate assembly for a file
 __/src/core.cpp.s:
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/__/src/core.cpp.s
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/__/src/core.cpp.s
 .PHONY : __/src/core.cpp.s
 
 startup_stm32f446xx.obj: startup_stm32f446xx.s.obj
@@ -427,7 +427,7 @@ startup_stm32f446xx.obj: startup_stm32f446xx.s.obj
 
 # target to build an object file
 startup_stm32f446xx.s.obj:
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/startup_stm32f446xx.s.obj
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build && $(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/startup_stm32f446xx.s.obj
 .PHONY : startup_stm32f446xx.s.obj
 
 # Help Target
@@ -486,6 +486,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

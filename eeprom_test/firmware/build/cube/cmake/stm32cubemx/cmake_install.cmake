@@ -1,4 +1,4 @@
-# Install script for directory: /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/cube/cmake/stm32cubemx
+# Install script for directory: /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/cube/cmake/stm32cubemx
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

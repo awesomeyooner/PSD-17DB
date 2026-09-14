@@ -54,24 +54,33 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware
+CMAKE_SOURCE_DIR = /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build
+CMAKE_BINARY_DIR = /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
 all: cube/all
+all: lib/EmbeddedLib/all
+all: lib/WireLib/all
+all: lib/ActionLib/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: cube/preinstall
+preinstall: lib/EmbeddedLib/preinstall
+preinstall: lib/WireLib/preinstall
+preinstall: lib/ActionLib/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: cube/clean
+clean: lib/EmbeddedLib/clean
+clean: lib/WireLib/clean
+clean: lib/ActionLib/clean
 .PHONY : clean
 
 #=============================================================================
@@ -111,21 +120,69 @@ cube/cmake/stm32cubemx/clean: cube/cmake/stm32cubemx/CMakeFiles/USB_Device_Libra
 .PHONY : cube/cmake/stm32cubemx/clean
 
 #=============================================================================
+# Directory level rules for directory lib/ActionLib
+
+# Recursive "all" directory target.
+lib/ActionLib/all: lib/ActionLib/CMakeFiles/ActionLib.dir/all
+.PHONY : lib/ActionLib/all
+
+# Recursive "preinstall" directory target.
+lib/ActionLib/preinstall:
+.PHONY : lib/ActionLib/preinstall
+
+# Recursive "clean" directory target.
+lib/ActionLib/clean: lib/ActionLib/CMakeFiles/ActionLib.dir/clean
+.PHONY : lib/ActionLib/clean
+
+#=============================================================================
+# Directory level rules for directory lib/EmbeddedLib
+
+# Recursive "all" directory target.
+lib/EmbeddedLib/all: lib/EmbeddedLib/CMakeFiles/EmbeddedLib.dir/all
+.PHONY : lib/EmbeddedLib/all
+
+# Recursive "preinstall" directory target.
+lib/EmbeddedLib/preinstall:
+.PHONY : lib/EmbeddedLib/preinstall
+
+# Recursive "clean" directory target.
+lib/EmbeddedLib/clean: lib/EmbeddedLib/CMakeFiles/EmbeddedLib.dir/clean
+.PHONY : lib/EmbeddedLib/clean
+
+#=============================================================================
+# Directory level rules for directory lib/WireLib
+
+# Recursive "all" directory target.
+lib/WireLib/all: lib/WireLib/CMakeFiles/WireLib.dir/all
+.PHONY : lib/WireLib/all
+
+# Recursive "preinstall" directory target.
+lib/WireLib/preinstall:
+.PHONY : lib/WireLib/preinstall
+
+# Recursive "clean" directory target.
+lib/WireLib/clean: lib/WireLib/CMakeFiles/WireLib.dir/clean
+.PHONY : lib/WireLib/clean
+
+#=============================================================================
 # Target rules for target cube/CMakeFiles/firmware.dir
 
 # All Build rule for target.
 cube/CMakeFiles/firmware.dir/all: cube/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/all
 cube/CMakeFiles/firmware.dir/all: cube/cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/all
+cube/CMakeFiles/firmware.dir/all: lib/EmbeddedLib/CMakeFiles/EmbeddedLib.dir/all
+cube/CMakeFiles/firmware.dir/all: lib/WireLib/CMakeFiles/WireLib.dir/all
+cube/CMakeFiles/firmware.dir/all: lib/ActionLib/CMakeFiles/ActionLib.dir/all
 	$(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/depend
 	$(MAKE) $(MAKESILENT) -f cube/CMakeFiles/firmware.dir/build.make cube/CMakeFiles/firmware.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/CMakeFiles --progress-num=22,23,24,25,26,27,28,29,30,31,32,33,34 "Built target firmware"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/CMakeFiles --progress-num=44,45,46,47,48,49,50,51,52,53,54,55,56 "Built target firmware"
 .PHONY : cube/CMakeFiles/firmware.dir/all
 
 # Build rule for subdir invocation for target.
 cube/CMakeFiles/firmware.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/CMakeFiles 34
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/CMakeFiles 56
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cube/CMakeFiles/firmware.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/CMakeFiles 0
 .PHONY : cube/CMakeFiles/firmware.dir/rule
 
 # Convenience name for target.
@@ -144,14 +201,14 @@ cube/CMakeFiles/firmware.dir/clean:
 cube/CMakeFiles/flash_dfu.dir/all: cube/CMakeFiles/firmware.dir/all
 	$(MAKE) $(MAKESILENT) -f cube/CMakeFiles/flash_dfu.dir/build.make cube/CMakeFiles/flash_dfu.dir/depend
 	$(MAKE) $(MAKESILENT) -f cube/CMakeFiles/flash_dfu.dir/build.make cube/CMakeFiles/flash_dfu.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/CMakeFiles --progress-num=35 "Built target flash_dfu"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/CMakeFiles --progress-num=57 "Built target flash_dfu"
 .PHONY : cube/CMakeFiles/flash_dfu.dir/all
 
 # Build rule for subdir invocation for target.
 cube/CMakeFiles/flash_dfu.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/CMakeFiles 35
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/CMakeFiles 57
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cube/CMakeFiles/flash_dfu.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/CMakeFiles 0
 .PHONY : cube/CMakeFiles/flash_dfu.dir/rule
 
 # Convenience name for target.
@@ -170,14 +227,14 @@ cube/CMakeFiles/flash_dfu.dir/clean:
 cube/CMakeFiles/flash_stlink.dir/all: cube/CMakeFiles/firmware.dir/all
 	$(MAKE) $(MAKESILENT) -f cube/CMakeFiles/flash_stlink.dir/build.make cube/CMakeFiles/flash_stlink.dir/depend
 	$(MAKE) $(MAKESILENT) -f cube/CMakeFiles/flash_stlink.dir/build.make cube/CMakeFiles/flash_stlink.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/CMakeFiles --progress-num=36 "Built target flash_stlink"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/CMakeFiles --progress-num=58 "Built target flash_stlink"
 .PHONY : cube/CMakeFiles/flash_stlink.dir/all
 
 # Build rule for subdir invocation for target.
 cube/CMakeFiles/flash_stlink.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/CMakeFiles 35
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/CMakeFiles 57
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cube/CMakeFiles/flash_stlink.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/CMakeFiles 0
 .PHONY : cube/CMakeFiles/flash_stlink.dir/rule
 
 # Convenience name for target.
@@ -196,14 +253,14 @@ cube/CMakeFiles/flash_stlink.dir/clean:
 cube/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/all:
 	$(MAKE) $(MAKESILENT) -f cube/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/build.make cube/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/depend
 	$(MAKE) $(MAKESILENT) -f cube/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/build.make cube/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17 "Built target STM32_Drivers"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/CMakeFiles --progress-num=15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31 "Built target STM32_Drivers"
 .PHONY : cube/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/all
 
 # Build rule for subdir invocation for target.
 cube/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/CMakeFiles 17
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cube/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/CMakeFiles 0
 .PHONY : cube/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/rule
 
 # Convenience name for target.
@@ -222,14 +279,14 @@ cube/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/clean:
 cube/cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/all:
 	$(MAKE) $(MAKESILENT) -f cube/cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/build.make cube/cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/depend
 	$(MAKE) $(MAKESILENT) -f cube/cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/build.make cube/cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/CMakeFiles --progress-num=18,19,20,21 "Built target USB_Device_Library"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/CMakeFiles --progress-num=32,33,34,35 "Built target USB_Device_Library"
 .PHONY : cube/cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/all
 
 # Build rule for subdir invocation for target.
 cube/cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cube/cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/CMakeFiles 0
 .PHONY : cube/cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/rule
 
 # Convenience name for target.
@@ -240,6 +297,85 @@ USB_Device_Library: cube/cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/rul
 cube/cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/clean:
 	$(MAKE) $(MAKESILENT) -f cube/cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/build.make cube/cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/clean
 .PHONY : cube/cmake/stm32cubemx/CMakeFiles/USB_Device_Library.dir/clean
+
+#=============================================================================
+# Target rules for target lib/EmbeddedLib/CMakeFiles/EmbeddedLib.dir
+
+# All Build rule for target.
+lib/EmbeddedLib/CMakeFiles/EmbeddedLib.dir/all:
+	$(MAKE) $(MAKESILENT) -f lib/EmbeddedLib/CMakeFiles/EmbeddedLib.dir/build.make lib/EmbeddedLib/CMakeFiles/EmbeddedLib.dir/depend
+	$(MAKE) $(MAKESILENT) -f lib/EmbeddedLib/CMakeFiles/EmbeddedLib.dir/build.make lib/EmbeddedLib/CMakeFiles/EmbeddedLib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/CMakeFiles --progress-num=4,5,6,7,8,9,10,11,12,13,14 "Built target EmbeddedLib"
+.PHONY : lib/EmbeddedLib/CMakeFiles/EmbeddedLib.dir/all
+
+# Build rule for subdir invocation for target.
+lib/EmbeddedLib/CMakeFiles/EmbeddedLib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/CMakeFiles 11
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/EmbeddedLib/CMakeFiles/EmbeddedLib.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/CMakeFiles 0
+.PHONY : lib/EmbeddedLib/CMakeFiles/EmbeddedLib.dir/rule
+
+# Convenience name for target.
+EmbeddedLib: lib/EmbeddedLib/CMakeFiles/EmbeddedLib.dir/rule
+.PHONY : EmbeddedLib
+
+# clean rule for target.
+lib/EmbeddedLib/CMakeFiles/EmbeddedLib.dir/clean:
+	$(MAKE) $(MAKESILENT) -f lib/EmbeddedLib/CMakeFiles/EmbeddedLib.dir/build.make lib/EmbeddedLib/CMakeFiles/EmbeddedLib.dir/clean
+.PHONY : lib/EmbeddedLib/CMakeFiles/EmbeddedLib.dir/clean
+
+#=============================================================================
+# Target rules for target lib/WireLib/CMakeFiles/WireLib.dir
+
+# All Build rule for target.
+lib/WireLib/CMakeFiles/WireLib.dir/all: lib/EmbeddedLib/CMakeFiles/EmbeddedLib.dir/all
+lib/WireLib/CMakeFiles/WireLib.dir/all: lib/ActionLib/CMakeFiles/ActionLib.dir/all
+	$(MAKE) $(MAKESILENT) -f lib/WireLib/CMakeFiles/WireLib.dir/build.make lib/WireLib/CMakeFiles/WireLib.dir/depend
+	$(MAKE) $(MAKESILENT) -f lib/WireLib/CMakeFiles/WireLib.dir/build.make lib/WireLib/CMakeFiles/WireLib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/CMakeFiles --progress-num=36,37,38,39,40,41,42,43 "Built target WireLib"
+.PHONY : lib/WireLib/CMakeFiles/WireLib.dir/all
+
+# Build rule for subdir invocation for target.
+lib/WireLib/CMakeFiles/WireLib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/CMakeFiles 22
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/WireLib/CMakeFiles/WireLib.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/CMakeFiles 0
+.PHONY : lib/WireLib/CMakeFiles/WireLib.dir/rule
+
+# Convenience name for target.
+WireLib: lib/WireLib/CMakeFiles/WireLib.dir/rule
+.PHONY : WireLib
+
+# clean rule for target.
+lib/WireLib/CMakeFiles/WireLib.dir/clean:
+	$(MAKE) $(MAKESILENT) -f lib/WireLib/CMakeFiles/WireLib.dir/build.make lib/WireLib/CMakeFiles/WireLib.dir/clean
+.PHONY : lib/WireLib/CMakeFiles/WireLib.dir/clean
+
+#=============================================================================
+# Target rules for target lib/ActionLib/CMakeFiles/ActionLib.dir
+
+# All Build rule for target.
+lib/ActionLib/CMakeFiles/ActionLib.dir/all: lib/EmbeddedLib/CMakeFiles/EmbeddedLib.dir/all
+	$(MAKE) $(MAKESILENT) -f lib/ActionLib/CMakeFiles/ActionLib.dir/build.make lib/ActionLib/CMakeFiles/ActionLib.dir/depend
+	$(MAKE) $(MAKESILENT) -f lib/ActionLib/CMakeFiles/ActionLib.dir/build.make lib/ActionLib/CMakeFiles/ActionLib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/CMakeFiles --progress-num=1,2,3 "Built target ActionLib"
+.PHONY : lib/ActionLib/CMakeFiles/ActionLib.dir/all
+
+# Build rule for subdir invocation for target.
+lib/ActionLib/CMakeFiles/ActionLib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/CMakeFiles 14
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/ActionLib/CMakeFiles/ActionLib.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/CMakeFiles 0
+.PHONY : lib/ActionLib/CMakeFiles/ActionLib.dir/rule
+
+# Convenience name for target.
+ActionLib: lib/ActionLib/CMakeFiles/ActionLib.dir/rule
+.PHONY : ActionLib
+
+# clean rule for target.
+lib/ActionLib/CMakeFiles/ActionLib.dir/clean:
+	$(MAKE) $(MAKESILENT) -f lib/ActionLib/CMakeFiles/ActionLib.dir/build.make lib/ActionLib/CMakeFiles/ActionLib.dir/clean
+.PHONY : lib/ActionLib/CMakeFiles/ActionLib.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

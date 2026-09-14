@@ -3,7 +3,7 @@ set(CMAKE_HOST_SYSTEM_NAME "Linux")
 set(CMAKE_HOST_SYSTEM_VERSION "7.0.0-31-generic")
 set(CMAKE_HOST_SYSTEM_PROCESSOR "x86_64")
 
-include("/home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/cube/cmake/gcc-arm-none-eabi.cmake")
+include("/home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/cube/cmake/gcc-arm-none-eabi.cmake")
 
 set(CMAKE_SYSTEM "Generic")
 set(CMAKE_SYSTEM_NAME "Generic")

@@ -1,4 +1,4 @@
-# Install script for directory: /home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/cube
+# Install script for directory: /home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/cube
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,6 +39,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/aaron/Documents/GitHub/Tiny-Thinker/firmware_examples/cpp_template/firmware/build/cube/cmake/stm32cubemx/cmake_install.cmake")
+  include("/home/aaron/Documents/GitHub/PSD-17DB/eeprom_test/firmware/build/cube/cmake/stm32cubemx/cmake_install.cmake")
 endif()
 
