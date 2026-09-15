@@ -7,3 +7,18 @@
 [submodule "eeprom_test/firmware/lib/ActionLib"]
 	path = eeprom_test/firmware/lib/ActionLib
 	url = https://github.com/awesomeyooner/ActionLib.git
+[submodule "i2c_tester/project/lib/plib"]
+	path = i2c_tester/project/lib/plib
+	url = https://github.com/awesomeyooner/plib.git
+[submodule "i2c_tester/project/lib/CommiFaceLib"]
+	path = i2c_tester/project/lib/CommiFaceLib
+	url = https://github.com/awesomeyooner/CommiFaceLib.git
+[submodule "i2c_firmware/firmware/lib/EmbeddedLib"]
+	path = i2c_firmware/firmware/lib/EmbeddedLib
+	url = https://github.com/awesomeyooner/EmbeddedLib.git
+[submodule "i2c_firmware/firmware/lib/WireLib"]
+	path = i2c_firmware/firmware/lib/WireLib
+	url = https://github.com/awesomeyooner/WireLib.git
+[submodule "i2c_firmware/firmware/lib/ActionLib"]
+	path = i2c_firmware/firmware/lib/ActionLib
+	url = https://github.com/awesomeyooner/ActionLib.git

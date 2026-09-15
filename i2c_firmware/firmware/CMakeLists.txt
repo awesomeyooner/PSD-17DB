@@ -22,9 +22,17 @@ target_compile_definitions(shared_library INTERFACE
     STM32F446xx
 )
 
+set(EMBEDDEDLIB_BUILD_SPI OFF CACHE BOOL "Disable SPI compiling" FORCE)
+set(EMBEDDEDLIB_BUILD_ADC OFF CACHE BOOL "Disable ADC compiling" FORCE)
+set(EMBEDDEDLIB_BUILD_TIMER OFF CACHE BOOL "Disable TIM compiling" FORCE)
+
+set(WIRELIB_BUILD_CAN OFF CACHE BOOL "Disable CAN compiling" FORCE)
+
 # Add Libaries here
 set(LIBRARIES
-    # MyLib
+    EmbeddedLib
+    ActionLib
+    WireLib
 )
 
 # Add linked libraries
