@@ -18,7 +18,6 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-#include "i2c.h"
 #include "usb_device.h"
 #include "gpio.h"
 
@@ -97,7 +96,6 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_USB_DEVICE_Init();
-  MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
     init();
   /* USER CODE END 2 */
@@ -107,9 +105,8 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-
-    /* USER CODE BEGIN 3 */
     update();
+    /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
 }
