@@ -14,7 +14,7 @@ int main(int argc, char* argv[])
 
     I2C device(10);
 
-    vector<uint8_t> bytes = {0, 1, 2, 3};
+    vector<uint8_t> bytes = {10, 1, 2, 3};
 
     StatusCode status = device.transmit_bytes(bytes);
 

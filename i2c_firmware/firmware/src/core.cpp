@@ -33,17 +33,6 @@ void init()
 
     // Serial.println("Starting Program!");
 
-    ActionManager::add(
-        Action(0.25).link_callback(
-            [](double, double) -> StatusedValue<bool>
-            {
-                Serial.println("Hello");
-
-                return StatusedValue<bool>(false, StatusCode::OK);
-            }
-        )
-    );
-
 } // end of "init()"
 
 
@@ -59,16 +48,30 @@ void HAL_I2C_AddrCallback(I2C_HandleTypeDef* hi2c, uint8_t TransferDirection, ui
     led.set_high();
 
     // Master wants to transmit data
-    // if(TransferDirection == I2C_DIRECTION_TRANSMIT)
-    //     HAL_I2C_Slave_Seq_Receive_IT(hi2c, read_buffer.data(), read_buffer.size(), I2C_FIRST_AND_LAST_FRAME);
+    if(TransferDirection == I2C_DIRECTION_TRANSMIT)
+        HAL_I2C_Slave_Seq_Receive_IT(hi2c, read_buffer.data(), read_buffer.size(), I2C_FIRST_AND_LAST_FRAME);
 }
 
 
 void HAL_I2C_ListenCpltCallback(I2C_HandleTypeDef* hi2c)
 {
-    // uint32_t num_bytes = read_buffer.size() - hi2c->XferCount;
-    
-    // Serial.println(num_bytes);
+    uint32_t num_bytes = read_buffer.size() - hi2c->XferCount;
+
+    ActionManager::add(
+        Action::run_once(
+            [num_bytes](double)
+            {
+                Serial.println("Received");
+                Serial.println((int)num_bytes);
+
+                for(int i = 0; i < num_bytes; i++)
+                {
+                    Serial.println(read_buffer.at(i));
+                }
+            }
+        )
+    );
+
 
     HAL_I2C_EnableListen_IT(hi2c);
 }
