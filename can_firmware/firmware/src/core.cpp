@@ -30,6 +30,17 @@ CAN_RxHeaderTypeDef   RxHeader;
 uint8_t               RxData[8];
 
 
+/*
+    Make sure Bitrate is 500k
+    B1 Time Quanta = 2 Times
+    B2 Time Quanta = 2 Times
+
+    Time Quanta settings
+    https://community.st.com/stm32-mcus-products-25/stm32-f4-canbus-communication-issue-125688
+
+    General usage
+    https://controllerstech.com/can-protocol-in-stm32/
+*/
 void init()
 {
     CAN_FilterTypeDef filter;
