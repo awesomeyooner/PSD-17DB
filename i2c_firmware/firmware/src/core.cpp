@@ -6,6 +6,8 @@
 #include "EmbeddedLib/devices/gpio_device.hpp"
 
 #include "WireLib/communication/protocols/serial_interface.hpp"
+#include "WireLib/communication/protocols/i2c/i2c_interface.hpp"
+#include "WireLib/communication/wire_manager.hpp"
 
 #include "ActionLib/ActionManager.hpp"
 
@@ -19,19 +21,96 @@ using namespace std;
 GPIODevice led = GPIODevice(GPIOC, GPIO_PIN_1);
 
 
-vector<uint8_t> read_buffer(64);
+uint8_t bob[] = {0, 1, 2, 3};
 
 
 void init()
 {
-    HAL_I2C_EnableListen_IT(&hi2c1);
+    I2C.set_i2c(&hi2c1);
+    I2C.set_max_packet_size(8);
+    I2C.set_parse_type(ParseType::PACKET);
 
-    // while(!Serial.is_connected())
-    // {
-    //     HAL_Delay(100);
-    // }
+    WireManager::attach(I2C);
 
-    // Serial.println("Starting Program!");
+    RegisterManager::add_command(
+        Command<vector<uint8_t>>(
+            100, // Register Byte
+            [](const vector<uint8_t>& bytes ) -> StatusCode
+            {
+                ActionManager::add(
+                    Action::run_once(
+                        [bytes](double)
+                        {
+                            Serial.println("Received Bytes");
+
+                            for(int i = 0; i < bytes.size(); i++)
+                            {
+                                Serial.println(bytes.at(i));
+                            }    
+
+                            
+                        }
+                    )
+                );
+
+                return StatusCode::OK;
+            }
+        )
+    );
+
+    RegisterManager::add_request(
+        Request<double>(
+            101, // Register Byte
+            []() -> double
+            {
+                ActionManager::add(
+                    Action::run_once(
+                        [](double)
+                        {
+                            Serial.println("Received Bytes");
+                        }
+                    )
+                );
+
+                return System::get_seconds();
+            }
+        )
+    );
+    
+
+
+    // I2C.configure_on_receive(
+    //     [](const vector<uint8_t>& bytes) -> StatusCode
+    //     {
+    //         ActionManager::add(
+    //             Action::run_once(
+    //                 [bytes](double)
+    //                 {
+    //                     Serial.println("Received Bytes");
+
+    //                     for(int i = 0; i < bytes.size(); i++)
+    //                     {
+    //                         Serial.println(bytes.at(i));
+    //                     }    
+    //                 }
+    //             )
+    //         );
+
+    //         return StatusCode::OK;
+    //     }
+    // );
+
+
+    ActionManager::add(
+        Action(0.5).link_callback(
+            [](double, double) -> StatusedValue<bool>
+            {
+                // led.toggle();
+
+                return StatusedValue<bool>(false, StatusCode::OK);
+            }
+        )
+    );
 
 } // end of "init()"
 
@@ -41,37 +120,3 @@ void update()
     ActionManager::update();
     
 } // end of "update()"
-
-
-void HAL_I2C_AddrCallback(I2C_HandleTypeDef* hi2c, uint8_t TransferDirection, uint16_t AddrMatchCode)
-{
-    led.set_high();
-
-    // Master wants to transmit data
-    if(TransferDirection == I2C_DIRECTION_TRANSMIT)
-        HAL_I2C_Slave_Seq_Receive_IT(hi2c, read_buffer.data(), read_buffer.size(), I2C_FIRST_AND_LAST_FRAME);
-}
-
-
-void HAL_I2C_ListenCpltCallback(I2C_HandleTypeDef* hi2c)
-{
-    uint32_t num_bytes = read_buffer.size() - hi2c->XferCount;
-
-    ActionManager::add(
-        Action::run_once(
-            [num_bytes](double)
-            {
-                Serial.println("Received");
-                Serial.println((int)num_bytes);
-
-                for(int i = 0; i < num_bytes; i++)
-                {
-                    Serial.println(read_buffer.at(i));
-                }
-            }
-        )
-    );
-
-
-    HAL_I2C_EnableListen_IT(hi2c);
-}
