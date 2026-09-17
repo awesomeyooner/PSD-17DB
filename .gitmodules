@@ -22,3 +22,12 @@
 [submodule "i2c_firmware/firmware/lib/ActionLib"]
 	path = i2c_firmware/firmware/lib/ActionLib
 	url = https://github.com/awesomeyooner/ActionLib.git
+[submodule "can_tester/project/lib/plib"]
+	path = can_tester/project/lib/plib
+	url = https://github.com/awesomeyooner/plib.git
+[submodule "can_tester/project/lib/PlotLib"]
+	path = can_tester/project/lib/PlotLib
+	url = https://github.com/awesomeyooner/PlotLib.git
+[submodule "can_tester/project/lib/CommiFaceLib"]
+	path = can_tester/project/lib/CommiFaceLib
+	url = https://github.com/awesomeyooner/CommiFaceLib.git

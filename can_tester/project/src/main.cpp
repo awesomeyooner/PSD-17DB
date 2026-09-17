@@ -1,7 +1,16 @@
 #include <iostream>
 #include <vector>
+#include <cstring>
 
-#include "CommiFaceLib/protocols/i2c.hpp"
+#include "plib/util/status.hpp"
+#include "plib/util/logger.hpp"
+
+#include <linux/can.h>
+#include <linux/can/raw.h>
+#include <net/if.h>
+#include <sys/ioctl.h>
+#include <sys/socket.h>
+#include <unistd.h>
 
 
 using namespace status_utils;
@@ -10,53 +19,36 @@ using namespace std;
 
 int main(int argc, char* argv[])
 {
-    I2C::init_name("MCP2221", true);
+    int s;
 
-    I2C device(10, 8, 10000);
+    sockaddr_can addr;
+    ifreq ifr;
 
-    // vector<uint8_t> bytes = {100, 9, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
+    s = socket(PF_CAN, SOCK_RAW, CAN_RAW);
 
-    // bytes.at(1) = bytes.size();
+    strcpy(ifr.ifr_name, "can0");
+    ioctl(s, SIOCGIFINDEX, &ifr);
 
-    // StatusCode status = device.transmit_bytes(bytes);
+    addr.can_family = AF_CAN;
+    addr.can_ifindex = ifr.ifr_ifindex;
 
-    // if(status == StatusCode::OK)
-    //     Logger::info("Good send");
-    // else
-    //     Logger::error("failed!");
+    bind(s, (struct sockaddr*)&addr, sizeof(addr));
 
-    // auto status = device.write_data<vector<uint8_t>>(100, {});
+    can_frame frame;
 
-    // auto bob = device.receive_bytes(4, 10000);
+    frame.can_id = 10;
+    frame.can_dlc = 8;
 
-    // uint8_t data[32];
+    for(int i = 0; i < 8; i++)
+    {
+        frame.data[i] = i;
+    }
 
-    // auto larry = i2c_read(&device.get_device(), 0, data, 4);
 
-    // Logger::info((int)larry);
+    int nbytes = write(s, &frame, sizeof(can_frame));
+    
+    Logger::info(nbytes);
 
-    // if(bob.is_OK())
-    //     Logger::info("bob");
-    // else
-    //     Logger::error("shart");
-
-    auto read = device.request_data<double>(101, 500);
-
-    if(read.is_OK())
-        Logger::info(read.value);
-    else
-        Logger::error("shart");
-
-    // vector<uint8_t> bytes = {101, 2};
-
-    // device.transmit_bytes(bytes);
-
-    // auto bob = device.receive_bytes(8, 500);
-
-    // if(bob.is_OK())
-    //     Logger::info("yay");
-    // else
-    //     Logger::error("womp");
 
     return 0;
 
