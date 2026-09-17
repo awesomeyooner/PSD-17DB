@@ -41,16 +41,20 @@ void init()
 
     filter.FilterFIFOAssignment = CAN_FILTER_FIFO0;
 
-    filter.FilterIdHigh = 10 << 5;
+    // filter.FilterIdHigh = 10 << 5;
+    filter.FilterIdHigh = 0;
     filter.FilterIdLow = 0;
 
-    filter.FilterMaskIdHigh = 0x7FF << 5;  // Mask All ID Bits, so only 1 ID is allowed
-    filter.FilterMaskIdLow = 0x0000; // Ignore all 0 bits
+    filter.FilterMaskIdHigh = 0;
+    // filter.FilterMaskIdHigh = 0x7FF << 5;  // Mask All ID Bits, so only 1 ID is allowed
+    filter.FilterMaskIdLow = 0; // Ignore all 0 bits
 
     filter.FilterMode = CAN_FILTERMODE_IDMASK;
     filter.FilterScale = CAN_FILTERSCALE_32BIT;
 
-    // HAL_CAN_ConfigFilter(&hcan1, &filter);
+    HAL_CAN_ConfigFilter(&hcan1, &filter);
+
+    HAL_CAN_Start(&hcan1);
 
     HAL_CAN_ActivateNotification(&hcan1, CAN_IT_RX_FIFO0_MSG_PENDING);
 
@@ -66,10 +70,14 @@ void init()
     // Length of data (# of bytes)
     TxHeader.DLC = 8;
 
+    TxHeader.TransmitGlobalTime = DISABLE;
+
     for(int i = 0; i < 8; i++)
     {
         TxData[i] = i;
     }
+
+    auto bob = HAL_CAN_AddTxMessage(&hcan1, &TxHeader, TxData, &TxMailbox);
 
 
     ActionManager::add(
@@ -83,6 +91,17 @@ void init()
         )
     );
 
+    while(!Serial.is_connected())
+    {
+        HAL_Delay(100);
+    }
+
+    Serial.print_header("Mailbox", HAL_CAN_GetTxMailboxesFreeLevel(&hcan1));
+    Serial.print_header("RX FIFO", HAL_CAN_GetRxFifoFillLevel(&hcan1, CAN_RX_FIFO0));
+    Serial.print_header("CAN Error", HAL_CAN_GetError(&hcan1));
+    Serial.print_header("Tx Pending", HAL_CAN_IsTxMessagePending(&hcan1, TxMailbox));
+    Serial.print_header("Bob", bob);
+
 } // end of "init()"
 
 
@@ -93,12 +112,12 @@ void update()
 } // end of "update()"
 
 
-void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan)
+void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef* hcan)
 {
     HAL_CAN_GetRxMessage(hcan, CAN_RX_FIFO0, &RxHeader, RxData);
 
     led.set_high();
-    
+
     ActionManager::add(
         Action::run_once(
             [](double)
