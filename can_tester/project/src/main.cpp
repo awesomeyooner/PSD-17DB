@@ -16,7 +16,10 @@
 using namespace status_utils;
 using namespace std;
 
-
+// sudo apt update && sudo apt install can-utils
+// sudo ip link set can0 up type can bitrate 500000
+// 500kbit/s is standard
+// ip link show type can
 int main(int argc, char* argv[])
 {
     int s;
@@ -26,13 +29,19 @@ int main(int argc, char* argv[])
 
     s = socket(PF_CAN, SOCK_RAW, CAN_RAW);
 
+    if(s < 0)
+        Logger::error("socket()");
+
     strcpy(ifr.ifr_name, "can0");
-    ioctl(s, SIOCGIFINDEX, &ifr);
+
+    if(ioctl(s, SIOCGIFINDEX, &ifr) < 0)
+        Logger::error("ioctl()");
 
     addr.can_family = AF_CAN;
     addr.can_ifindex = ifr.ifr_ifindex;
 
-    bind(s, (struct sockaddr*)&addr, sizeof(addr));
+    if(bind(s, (struct sockaddr*)&addr, sizeof(addr)) < 0)
+        Logger::error("bind()");
 
     can_frame frame;
 
@@ -44,9 +53,8 @@ int main(int argc, char* argv[])
         frame.data[i] = i;
     }
 
+    int nbytes = write(s, &frame, sizeof(frame));
 
-    int nbytes = write(s, &frame, sizeof(can_frame));
-    
     Logger::info(nbytes);
 
 

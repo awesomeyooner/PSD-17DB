@@ -2,6 +2,8 @@
 
 #include "gpio.h"
 #include "i2c.h"
+#include "can.h"
+#include "stm32f4xx_hal_can.h"
 
 #include "EmbeddedLib/devices/gpio_device.hpp"
 
@@ -20,85 +22,54 @@ using namespace std;
 
 GPIODevice led = GPIODevice(GPIOC, GPIO_PIN_1);
 
+CAN_TxHeaderTypeDef   TxHeader;
+uint8_t               TxData[8];
+uint32_t              TxMailbox;
 
-uint8_t bob[] = {0, 1, 2, 3};
+CAN_RxHeaderTypeDef   RxHeader;
+uint8_t               RxData[8];
 
 
 void init()
 {
-    I2C.set_i2c(&hi2c1);
-    I2C.set_max_packet_size(8);
-    I2C.set_parse_type(ParseType::PACKET);
+    CAN_FilterTypeDef filter;
 
-    WireManager::attach(I2C);
+    filter.FilterActivation = CAN_FILTER_ENABLE;
 
-    RegisterManager::add_command(
-        Command<vector<uint8_t>>(
-            100, // Register Byte
-            [](const vector<uint8_t>& bytes ) -> StatusCode
-            {
-                ActionManager::add(
-                    Action::run_once(
-                        [bytes](double)
-                        {
-                            Serial.println("Received Bytes");
+    filter.FilterBank = 0;
+    filter.SlaveStartFilterBank = 14;
 
-                            for(int i = 0; i < bytes.size(); i++)
-                            {
-                                Serial.println(bytes.at(i));
-                            }    
+    filter.FilterFIFOAssignment = CAN_FILTER_FIFO0;
 
-                            
-                        }
-                    )
-                );
+    filter.FilterIdHigh = 10 << 5;
+    filter.FilterIdLow = 0;
 
-                return StatusCode::OK;
-            }
-        )
-    );
+    filter.FilterMaskIdHigh = 0x7FF << 5;  // Mask All ID Bits, so only 1 ID is allowed
+    filter.FilterMaskIdLow = 0x0000; // Ignore all 0 bits
 
-    RegisterManager::add_request(
-        Request<double>(
-            101, // Register Byte
-            []() -> double
-            {
-                ActionManager::add(
-                    Action::run_once(
-                        [](double)
-                        {
-                            Serial.println("Received Bytes");
-                        }
-                    )
-                );
+    filter.FilterMode = CAN_FILTERMODE_IDMASK;
+    filter.FilterScale = CAN_FILTERSCALE_32BIT;
 
-                return System::get_seconds();
-            }
-        )
-    );
+    // HAL_CAN_ConfigFilter(&hcan1, &filter);
+
+    HAL_CAN_ActivateNotification(&hcan1, CAN_IT_RX_FIFO0_MSG_PENDING);
+
+    // Using Standard ID (not extended)
+    TxHeader.IDE = CAN_ID_STD;
     
+    // ID is 10
+    TxHeader.StdId = 10;
+    
+    // Indicate we are sending data rather than retrieve (CAN_RTR_REMOTE)
+    TxHeader.RTR = CAN_RTR_DATA;
 
+    // Length of data (# of bytes)
+    TxHeader.DLC = 8;
 
-    // I2C.configure_on_receive(
-    //     [](const vector<uint8_t>& bytes) -> StatusCode
-    //     {
-    //         ActionManager::add(
-    //             Action::run_once(
-    //                 [bytes](double)
-    //                 {
-    //                     Serial.println("Received Bytes");
-
-    //                     for(int i = 0; i < bytes.size(); i++)
-    //                     {
-    //                         Serial.println(bytes.at(i));
-    //                     }    
-    //                 }
-    //             )
-    //         );
-
-    //         return StatusCode::OK;
-    //     }
-    // );
+    for(int i = 0; i < 8; i++)
+    {
+        TxData[i] = i;
+    }
 
 
     ActionManager::add(
@@ -120,3 +91,29 @@ void update()
     ActionManager::update();
     
 } // end of "update()"
+
+
+void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan)
+{
+    HAL_CAN_GetRxMessage(hcan, CAN_RX_FIFO0, &RxHeader, RxData);
+
+    led.set_high();
+    
+    ActionManager::add(
+        Action::run_once(
+            [](double)
+            {
+                Serial.println("Received Data!");
+
+                for(int i = 0; i < 8; i++)
+                {
+                    Serial.println(RxData[i]);
+
+                }
+            }
+        )
+    );
+  
+  // Get ID of sender using RxHeader.StdId
+
+}
