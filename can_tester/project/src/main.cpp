@@ -5,6 +5,8 @@
 #include "plib/util/status.hpp"
 #include "plib/util/logger.hpp"
 
+#include "CommiFaceLib/protocols/can.hpp"
+
 #include <linux/can.h>
 #include <linux/can/raw.h>
 #include <net/if.h>
@@ -22,54 +24,26 @@ using namespace std;
 // ip link show type can
 int main(int argc, char* argv[])
 {
-    int s;
+    CAN::open("can0", true);
 
-    sockaddr_can addr;
-    ifreq ifr;
+    CAN device = CAN(10);
 
-    s = socket(PF_CAN, SOCK_RAW, CAN_RAW);
+    StatusCode transmit = device.transmit_bytes({0, 1, 2, 3, 4, 5, 6, 7});
 
-    if(s < 0)
-        Logger::error("socket()");
+    if(transmit != StatusCode::OK)
+        Logger::error("Transmit Failed!");
 
-    strcpy(ifr.ifr_name, "can0");
+    StatusedValue<vector<uint8_t>> receive = device.receive_bytes(8);
 
-    if(ioctl(s, SIOCGIFINDEX, &ifr) < 0)
-        Logger::error("ioctl()");
+    if(!receive.is_OK())
+        Logger::error("Receive Failed!");
 
-    addr.can_family = AF_CAN;
-    addr.can_ifindex = ifr.ifr_ifindex;
-
-    if(bind(s, (struct sockaddr*)&addr, sizeof(addr)) < 0)
-        Logger::error("bind()");
-
-    can_frame frame;
-
-    frame.can_id = 10;
-    frame.can_dlc = 8;
-
-    for(int i = 0; i < 8; i++)
+    for(int i = 0; i < receive.value.size(); i++)
     {
-        frame.data[i] = i;
+        Logger::info(receive.value.at(i));
     }
 
-    int nbytes = write(s, &frame, sizeof(frame));
-
-    Logger::info("Wrote: ");
-    Logger::info(nbytes);
-
-    can_frame read_frame;
-
-    int read_bytes = read(s, &read_frame, sizeof(read_frame));
-
-    Logger::info("Reading: ");
-
-    Logger::info((int)read_frame.can_id);
-
-    for(int i = 0; i < 8; i++)
-    {
-        Logger::info(read_frame.data[i]);
-    }
+    CAN::close_socket();
 
     return 0;
 
