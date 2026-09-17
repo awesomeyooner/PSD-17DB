@@ -55,8 +55,21 @@ int main(int argc, char* argv[])
 
     int nbytes = write(s, &frame, sizeof(frame));
 
+    Logger::info("Wrote: ");
     Logger::info(nbytes);
 
+    can_frame read_frame;
+
+    int read_bytes = read(s, &read_frame, sizeof(read_frame));
+
+    Logger::info("Reading: ");
+
+    Logger::info((int)read_frame.can_id);
+
+    for(int i = 0; i < 8; i++)
+    {
+        Logger::info(read_frame.data[i]);
+    }
 
     return 0;
 
