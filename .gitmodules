@@ -31,3 +31,12 @@
 [submodule "can_tester/project/lib/CommiFaceLib"]
 	path = can_tester/project/lib/CommiFaceLib
 	url = https://github.com/awesomeyooner/CommiFaceLib.git
+[submodule "can_firmware/firmware/lib/EmbeddedLib"]
+	path = can_firmware/firmware/lib/EmbeddedLib
+	url = https://github.com/awesomeyooner/EmbeddedLib.git
+[submodule "can_firmware/firmware/lib/WireLib"]
+	path = can_firmware/firmware/lib/WireLib
+	url = https://github.com/awesomeyooner/WireLib.git
+[submodule "can_firmware/firmware/lib/ActionLib"]
+	path = can_firmware/firmware/lib/ActionLib
+	url = https://github.com/awesomeyooner/ActionLib.git
